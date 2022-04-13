@@ -23,3 +23,8 @@ docker run -p 8000:8000 --name my-api FAST-API:0.1
 
 test -> curl localhost:8000
 docker kill my-api
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+heroku stack:set container --app docker-hello-world-test 
