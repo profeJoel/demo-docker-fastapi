@@ -1,0 +1,25 @@
+from subprocess import _TXT
+
+
+crear venv -> python -m venv venv
+activar venv -> venv/bin/activate (linux)
+activar venv -> venv\Scripts\Activate.ps1 (win)
+
+desactivar -> deactivate
+
+installar paquetes -> python -m pip install <package>
+ver lista de paquetes -> python -m pip list
+reproducir paquetes -> python -m pip freeze > requirements.txt
+
+instalar desde archivo -> python -m pip install -r requirements.txt
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+docker build -t FAST-API:0.1 .
+docker run -p 8000:8000 --name my-api FAST-API:0.1
+
+test -> curl localhost:8000
+docker kill my-api
